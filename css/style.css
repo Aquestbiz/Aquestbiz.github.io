@@ -189,8 +189,7 @@ body {
 
 .gift,
 .contact,
-.testimonial,
-.home {
+.testimonial {
   width: 100%;
   min-height: 100%;
   padding-top: 10rem;
@@ -201,8 +200,7 @@ body {
   margin-bottom: 0.5rem;
   color: orange;
 }
-.testimonial .image,
-.home .image {
+.testimonial .image {
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -213,8 +211,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
 }
-.testimonial .my-bg,
-.home .my-bg {
+.testimonial .my-bg {
   border-radius: 13px 13px 13px 13px;
   -webkit-border-radius: 13px 13px 13px 13px;
   -moz-border-radius: 13px 13px 13px 13px;

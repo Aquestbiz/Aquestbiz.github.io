@@ -67,7 +67,12 @@ body {
   min-height: 100vh;
   padding-top: 15rem;
 }
-
+.home .image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .home h2 {
   font-family: "Poppins", sans-serif;
   font-size: 3rem;

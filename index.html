@@ -1,62 +1,255 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101828">
-  <meta name="description" content="AQUEST TECH — solusi website profesional untuk undangan digital, bisnis, dan UMKM.">
-  <title>AQUEST TECH — Website Profesional untuk Bisnis Anda</title>
-  <style>
-    :root{--ink:#101828;--muted:#667085;--red:#e92935;--red2:#ff5360;--soft:#fff4f4;--line:#eaecf0;--white:#fff;--green:#079455;--shadow:0 18px 50px rgba(16,24,40,.09);--radius:22px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.container{width:min(1160px,calc(100% - 40px));margin:auto}
-    .topbar{background:var(--ink);color:#d0d5dd;font-size:12px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(234,236,240,.8)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.7px;font-size:21px}.brand-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--red),#ff7a59);display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 8px 18px #e9293538}.brand span:last-child{color:var(--red)}.navlinks{display:flex;gap:26px;color:#475467;font-size:14px;font-weight:650}.navlinks a:hover{color:var(--red)}.nav-actions{display:flex;align-items:center;gap:10px}.cart-btn,.menu-btn{border:1px solid var(--line);background:white;border-radius:12px;padding:10px 14px;font-weight:750;cursor:pointer}.cart-count{background:var(--red);color:white;border-radius:99px;padding:2px 7px;font-size:11px;margin-left:5px}.menu-btn{display:none}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:13px 19px;font-weight:800;cursor:pointer;transition:.2s}.btn-primary{background:var(--red);color:white;box-shadow:0 9px 20px #e9293530}.btn-primary:hover{background:#cb1f2b;transform:translateY(-2px)}.btn-light{background:white;color:var(--ink);border:1px solid var(--line)}.btn-dark{background:var(--ink);color:white}.btn-sm{padding:10px 14px;font-size:13px}
-    .hero{padding:82px 0 72px;overflow:hidden;background:radial-gradient(circle at 84% 30%,#ffe4e5 0,transparent 28%),linear-gradient(180deg,#fff 0%,#fffafa 100%)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:55px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#c51f2a;background:#fff0f0;border:1px solid #ffd9dc;padding:7px 12px;border-radius:99px;font-size:12px;font-weight:850;letter-spacing:.3px}.dot{width:7px;height:7px;border-radius:50%;background:var(--red)}h1{font-size:clamp(40px,5.4vw,66px);line-height:1.06;letter-spacing:-2.8px;margin:20px 0}.hero h1 em{font-style:normal;color:var(--red)}.lead{font-size:17px;color:var(--muted);max-width:570px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 30px}.trust{display:flex;align-items:center;gap:15px;color:var(--muted);font-size:13px}.avatars{display:flex}.avatars i{width:29px;height:29px;border-radius:50%;border:2px solid white;background:#f4b7bb;margin-left:-7px;display:grid;place-items:center;font-size:12px;font-style:normal}.avatars i:first-child{margin:0;background:#fbd5a5}.avatars i:nth-child(2){background:#c9d9ff}.avatars i:nth-child(3){background:#d5f2df}
-    .hero-visual{position:relative;min-height:420px;display:grid;place-items:center}.visual-glow{position:absolute;width:360px;height:360px;border-radius:50%;background:linear-gradient(135deg,#ffe2e3,#fff3f3);filter:blur(2px)}.dashboard{position:relative;width:min(100%,440px);background:white;border:1px solid #f1dfe0;border-radius:24px;box-shadow:0 30px 70px #a61f2b20;padding:22px;transform:rotate(2deg)}.dash-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}.dash-title{font-weight:850}.pill{font-size:11px;color:#067647;background:#ecfdf3;padding:5px 9px;border-radius:99px;font-weight:800}.dash-welcome{padding:20px 0 14px}.dash-welcome small{color:var(--muted)}.dash-welcome strong{display:block;font-size:25px;letter-spacing:-1px}.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{padding:15px;border:1px solid var(--line);border-radius:15px}.stat small{color:var(--muted);font-size:11px}.stat b{display:block;font-size:21px}.chart{height:100px;margin-top:17px;border-radius:14px;background:linear-gradient(180deg,#fff0f1,#fff);position:relative;overflow:hidden}.chart svg{width:100%;height:100%}.floating-note{position:absolute;right:-12px;bottom:30px;background:white;border:1px solid var(--line);padding:13px 16px;border-radius:15px;box-shadow:var(--shadow);font-size:12px;font-weight:800;transform:rotate(-4deg)}
-    .metrics{padding:25px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.metric{text-align:center}.metric b{font-size:24px;letter-spacing:-1px}.metric span{display:block;color:var(--muted);font-size:12px}
-    section{scroll-margin-top:95px}.section{padding:82px 0}.section-head{text-align:center;max-width:660px;margin:0 auto 40px}.kicker{font-size:12px;font-weight:900;letter-spacing:1.3px;color:var(--red);text-transform:uppercase}.section h2{font-size:clamp(29px,4vw,42px);letter-spacing:-1.5px;line-height:1.15;margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-card{padding:30px;border-radius:var(--radius);background:var(--ink);color:white;position:relative;overflow:hidden}.about-card:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:#e9293538;right:-60px;bottom:-100px}.about-card h3{font-size:25px;line-height:1.2;margin:0 0 12px;position:relative;z-index:1}.about-card p{color:#cbd5e1;position:relative;z-index:1}.about-points{display:grid;gap:17px}.point{display:flex;gap:14px}.check{flex:none;width:34px;height:34px;border-radius:11px;background:#fff0f0;color:var(--red);display:grid;place-items:center;font-weight:900}.point b{display:block}.point p{margin:3px 0 0;color:var(--muted);font-size:14px}
-    .products{background:#fafbfc}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product-card{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;transition:.2s}.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#ffd0d3}.product-icon{width:52px;height:52px;border-radius:16px;background:var(--soft);display:grid;place-items:center;font-size:25px;margin-bottom:20px}.product-card h3{margin:0 0 8px;font-size:20px}.product-card p{color:var(--muted);font-size:14px;margin:0 0 18px;min-height:66px}.features{display:grid;gap:8px;margin:0 0 20px;padding:0;list-style:none;font-size:13px;color:#475467}.features li:before{content:"✓";color:var(--green);font-weight:900;margin-right:8px}.price{font-size:24px;font-weight:900;letter-spacing:-.8px;margin-top:auto;margin-bottom:15px}.price small{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:0}.product-card .btn{width:100%}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{padding:23px;border:1px solid var(--line);border-radius:18px}.step-num{color:var(--red);font-size:12px;font-weight:900}.step h3{margin:8px 0 5px}.step p{margin:0;color:var(--muted);font-size:14px}
-    .reviews{background:#fffafa}.review-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}.review-summary{background:var(--ink);color:white;padding:28px;border-radius:20px}.review-summary .rating{font-size:48px;font-weight:900;line-height:1}.stars{color:#ffbd3d;letter-spacing:3px}.review-summary p{color:#cbd5e1;font-size:13px}.review-list{display:grid;gap:12px}.review{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}.review-head{display:flex;justify-content:space-between;gap:10px}.review-head b{font-size:14px}.review small{color:var(--muted)}.review p{font-size:14px;color:#475467;margin:8px 0 0}.review-form{background:white;border:1px solid var(--line);padding:22px;border-radius:18px;margin-top:18px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:6px;margin-bottom:12px}.field label{font-size:12px;font-weight:800;color:#475467}.field input,.field textarea,.field select{width:100%;padding:12px;border:1px solid #d0d5dd;border-radius:10px;outline:none;background:white}.field input:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px #e9293515}.field textarea{min-height:88px;resize:vertical}
-    .cta{padding:55px 0}.cta-box{background:linear-gradient(115deg,#df202d,#ff5964);border-radius:24px;padding:42px;color:white;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta-box h2{font-size:32px;line-height:1.15;margin:0 0 8px;letter-spacing:-1px}.cta-box p{margin:0;color:#ffe6e7}.cta-box .btn{background:white;color:#c51f2a;white-space:nowrap}
-    footer{background:#101828;color:white;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}.footer-brand p{max-width:290px;color:#98a2b3;font-size:13px}.footer-col b{display:block;margin-bottom:13px}.footer-col a,.footer-col span{display:block;color:#98a2b3;font-size:13px;margin:8px 0}.footer-col a:hover{color:white}.partners{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.partner{border:1px solid #344054;border-radius:9px;padding:7px 10px;font-size:11px;color:#d0d5dd}.copyright{border-top:1px solid #344054;margin-top:38px;padding-top:20px;color:#98a2b3;font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .chat-launch{position:fixed;right:22px;bottom:22px;z-index:40;border:0;border-radius:99px;background:var(--red);color:white;padding:14px 18px;font-weight:850;box-shadow:0 12px 30px #e9293545;cursor:pointer}.chat-panel{position:fixed;right:22px;bottom:85px;width:min(350px,calc(100vw - 32px));height:430px;background:white;border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 70px #10182830;z-index:41;display:none;overflow:hidden}.chat-panel.open{display:flex;flex-direction:column}.chat-head{background:var(--ink);color:white;padding:16px;display:flex;justify-content:space-between;align-items:center}.chat-head small{display:block;color:#cbd5e1;font-size:11px}.chat-close{background:transparent;border:0;color:white;font-size:22px;cursor:pointer}.chat-messages{padding:15px;flex:1;overflow:auto;background:#f8fafc;display:flex;flex-direction:column;gap:10px}.bubble{max-width:85%;padding:10px 12px;border-radius:13px;font-size:13px;background:white;border:1px solid var(--line);align-self:flex-start}.bubble.me{background:#ffeff0;border-color:#ffd5d8;align-self:flex-end}.chat-input{display:flex;padding:10px;gap:8px;border-top:1px solid var(--line)}.chat-input input{min-width:0;flex:1;border:1px solid var(--line);border-radius:10px;padding:10px}.chat-input button{border:0;background:var(--red);color:white;border-radius:10px;padding:0 13px;font-weight:800;cursor:pointer}
-    .modal-backdrop{position:fixed;inset:0;background:#10182899;z-index:60;display:none;align-items:center;justify-content:center;padding:16px}.modal-backdrop.show{display:flex}.modal{background:white;border-radius:22px;width:min(720px,100%);max-height:90vh;overflow:auto;padding:25px;position:relative}.modal-top{display:flex;justify-content:space-between;align-items:center;gap:15px}.modal-top h2{margin:0;font-size:24px}.x-btn{border:0;background:#f2f4f7;border-radius:10px;width:36px;height:36px;font-size:20px;cursor:pointer}.cart-items{display:grid;gap:10px;margin:20px 0}.cart-row{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px solid var(--line);padding:13px;border-radius:13px}.cart-row small{display:block;color:var(--muted)}.qty{display:flex;align-items:center;gap:8px}.qty button{border:1px solid var(--line);background:white;border-radius:8px;width:28px;height:28px;cursor:pointer}.total{display:flex;justify-content:space-between;font-size:18px;font-weight:900;border-top:1px solid var(--line);padding-top:15px}.empty{text-align:center;color:var(--muted);padding:30px}.payment{display:none;margin-top:22px;border-top:1px solid var(--line);padding-top:20px}.payment.show{display:block}.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.qr-image{width:100%;max-width:310px;display:block;margin:auto;border:1px solid var(--line);border-radius:12px}.payment-note{font-size:12px;color:var(--muted)}.notice{background:#fffaeb;color:#93370d;border:1px solid #fedf89;border-radius:12px;padding:12px;font-size:12px;margin:14px 0}
-    .toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:white;padding:12px 17px;border-radius:12px;z-index:90;font-size:13px;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
-    @media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:18px 22px;border-bottom:1px solid var(--line);flex-direction:column;gap:15px}.navlinks.show{display:flex}.menu-btn{display:block}.hero-grid{grid-template-columns:1fr;gap:20px}.hero{padding-top:55px}.hero-visual{min-height:370px}.about-grid{grid-template-columns:1fr;gap:25px}.footer-grid{grid-template-columns:1fr 1fr}.review-layout{grid-template-columns:1fr}.product-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){.container{width:min(100% - 30px,1160px)}.topbar .container{justify-content:center}.nav{height:66px}.brand{font-size:18px}.navlinks{top:66px}.cart-btn{padding:9px 10px}.hero{padding:45px 0 48px}h1{letter-spacing:-1.8px}.lead{font-size:15px}.hero-visual{min-height:310px}.visual-glow{width:280px;height:280px}.dashboard{padding:16px;transform:none}.floating-note{right:0;bottom:10px}.metric-grid{grid-template-columns:1fr 1fr;row-gap:18px}.section{padding:62px 0}.product-grid,.steps{grid-template-columns:1fr}.product-card p{min-height:0}.form-grid,.payment-grid{grid-template-columns:1fr}.cta-box{padding:28px;display:block}.cta-box h2{font-size:27px}.cta-box .btn{margin-top:20px}.footer-grid{grid-template-columns:1fr 1fr;gap:22px}.footer-brand{grid-column:1/-1}.modal{padding:19px}.chat-launch{right:14px;bottom:14px}.chat-panel{right:12px;bottom:75px}.copyright{display:block}.copyright span{display:block;margin-top:5px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUEST Tech - Jasa Pembuatan Website & Undangan Pernikahan Digital Profesional</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-  <div class="topbar"><div class="container"><span>✦ Solusi digital untuk bisnis yang ingin berkembang</span><span>Responsif • Modern • Mudah dikelola</span></div></div>
-  <header><div class="container nav">
-    <a class="brand" href="#home"><span class="brand-mark">A</span>AQUEST <span>TECH</span></a>
-    <nav class="navlinks" id="navlinks"><a href="#home">Beranda</a><a href="#tentang">Tentang</a><a href="#layanan">Layanan</a><a href="#ulasan">Ulasan</a><a href="#kontak">Kontak</a></nav>
-    <div class="nav-actions"><button class="cart-btn" onclick="openCart()">Keranjang <span class="cart-count" id="cartCount">0</span></button><button class="menu-btn" onclick="toggleMenu()" aria-label="Buka menu">☰</button></div>
-  </div></header>
-  <main>
-    <section class="hero" id="home"><div class="container hero-grid">
-      <div><span class="eyebrow"><i class="dot"></i> DIGITAL SOLUTION PARTNER</span>
-        <h1>Bangun kesan hebat lewat <em>website</em> profesional.</h1>
-        <p class="lead">AQUEST TECH membantu personal, bisnis, dan pelaku UMKM tampil lebih terpercaya di dunia digital melalui website yang menarik, cepat, dan nyaman digunakan di semua perangkat.</p>
-        <div class="hero-buttons"><a class="btn btn-primary" href="#layanan">Jelajahi Layanan ↗</a><button class="btn btn-light" onclick="openChat()">Konsultasi Gratis</button></div>
-        <div class="trust"><div class="avatars"><i>✦</i><i>●</i><i>◆</i></div><span>Ide Anda, kami bantu wujudkan menjadi pengalaman digital.</span></div>
-      </div>
-      <div class="hero-visual"><div class="visual-glow"></div><div class="dashboard">
-        <div class="dash-top"><div class="brand" style="font-size:15px"><span class="brand-mark" style="width:29px;height:29px;border-radius:9px">A</span>AQUEST TECH</div><span class="pill">● Online</span></div>
-        <div class="dash-welcome"><small>Digital presence, made simple</small><strong>Halo, masa depan bisnis!</strong></div>
-        <div class="stat-grid"><div class="stat"><small>Website</small><b>01 ✦</b><small>Siap dikembangkan</small></div><div class="stat"><small>Pengalaman</small><b>100%</b><small>Fokus pada pengguna</small></div></div>
-        <div class="chart"><svg viewBox="0 0 400 100" preserveAspectRatio="none"><path d="M0 80 C35 70 45 82 80 56 S130 68 165 40 S220 56 255 29 S315 42 350 12 S380 20 400 4 L400 100 L0 100Z" fill="#ffe5e7"/><path d="M0 80 C35 70 45 82 80 56 S130 68 165 40 S220 56 255 29 S315 42 350 12 S380 20 400 4" fill="none" stroke="#e92935" stroke-width="3"/></svg></div>
-      </div><div class="floating-note">✦ Ide kreatif jadi nyata</div></div>
-    </div></section>
-    <div class="metrics"><div class="container metric-grid"><div class="metric"><b>3+</b><span>Pilihan layanan digital</span></div><div class="metric"><b>100%</b><span>Desain responsif</span></div><div class="metric"><b>1:1</b><span>Pendekatan personal</span></div><div class="metric"><b>∞</b><span>Ruang untuk berkembang</span></div></div></div>
-    <section class="section" id="tentang"><div class="container about-grid">
-      <div><span class="kicker">Tentang AQUEST TECH</span><h2>Teknologi yang dekat dengan kebutuhan Anda.</h2><p style="color:var(--muted)">AQUEST TECH adalah partner solusi digital yang berfokus membantu usaha dan individu membangun identitas online. Kami percaya website bukan sekadar tampilan, tetapi tempat pelanggan mengenal, mempercayai, dan terhubung dengan brand Anda.</p><p style="color:var(--muted)">Mulai dari undangan pernikahan digital hingga website bisnis dan UMKM, setiap proyek dirancang dengan memperhatikan tujuan, karakter brand, dan kemudahan pengunjung.</p></div>
-      <div class="about-card"><h3>Lebih dari sekadar website.</h3><p>Kami menggabungkan desain yang bersih, struktur informasi yang jelas, dan pengalaman penggunaan yang nyaman agar kehadiran digital Anda terasa profesional.</p><div style="position:relative;z-index:1;margin-top:24px;font-weight:800">✦ Kreatif &nbsp; ✦ Adaptif &nbsp; ✦ Berorientasi pengguna</div></div>
-    </div></section>
-    <section class="section products" id="layanan"><div class="container"><div class="section-head"><span class="kicker">Layanan Kami</span><h2>Pilih website yang sesuai kebutuhan.</h2><p>Pilih layanan untuk memasukkannya ke keranjang. Harga di bawah merupakan harga awal dan dapat disesuaikan berdasarkan fitur serta kebutuhan proyek.</p></div>
-      <div class="product-grid">
-        <article class="product-card"><div class="product-icon">💍</div><h3>Undangan Pernikahan</h3><p>Bagikan momen spesial dengan undangan digital yang elegan, praktis, dan mudah dibagikan.</p><ul class="features"><li>Desain personal & responsif</li><li>Detail acara dan lokasi</li><li>Galeri foto & RSVP</li><li>Musik dan cerita pasangan (opsional)</li></ul><div class="price">Rp150.000 <small>/ mulai</small></div><button class="btn btn-primary" onclick="addToCart('Undangan Pernikahan',150000)">Tambah ke Keranjang +</button></article>
-        <article class="pr
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- TOP NOTIFICATION BAR -->
+    <div class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-inner">
+        <span>🎉 Promo Spesial! Gunakan kode voucher <strong class="underline decoration-amber-400 decoration-2">AQUEST10</strong> untuk diskon 10% di keranjang belanja!</span>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-code text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold bg-gradient-to-r from-indigo-600 to-violet-700 bg-clip-text text-transparent tracking-tight">AQUEST TECH</span>
+                    <span class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold">Web & Wedding Solution</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                <a href="#beranda" class="hover:text-indigo-600 transition-colors">Beranda</a>
+                <a href="#layanan" class="hover:text-indigo-600 transition-colors">Layanan & Katalog</a>
+                <a href="#fitur" class="hover:text-indigo-600 transition-colors">Keunggulan</a>
+                <a href="#partner" class="hover:text-indigo-600 transition-colors">Partner Kami</a>
+                <a href="#kontak" class="hover:text-indigo-600 transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Actions: Cart & Mobile Menu Button -->
+            <div class="flex items-center gap-3">
+                <!-- Cart Button with Badge -->
+                <button onclick="toggleCartModal()" class="relative p-2.5 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 transition-colors border border-slate-200/60" aria-label="Keranjang Belanja">
+                    <i class="fa-solid fa-cart-shopping text-lg"></i>
+                    <span id="cart-badge" class="absolute -top-1.5 -right-1.5 bg-rose-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md scale-0 transition-transform duration-300">0</span>
+                </button>
+
+                <!-- WhatsApp Quick Link Button -->
+                <a href="https://wa.me/6281779993104?text=Halo%20AQUEST%20Tech,%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website%20dan%20undangan%20pernikahan." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-sm transition-all hover:shadow-emerald-500/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+
+                <!-- Mobile Menu Hamburger -->
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#beranda" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Beranda</a>
+            <a href="#layanan" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Layanan & Katalog</a>
+            <a href="#fitur" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Keunggulan</a>
+            <a href="#partner" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Partner Kami</a>
+            <a href="#kontak" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Kontak</a>
+            <div class="pt-2 border-t border-slate-100">
+                <a href="https://wa.me/6281779993104" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 text-white py-2.5 rounded-xl font-medium w-full">
+                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (JUDUL HALAMAN & BANNER) -->
+    <section id="beranda" class="relative overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-white py-16 sm:py-24 lg:py-32">
+        <!-- Background Glow Ornaments -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-indigo-200/30 blur-3xl pointer-events-none rounded-full -z-10 animate-pulse"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left animate-[fadeIn_0.8s_ease-out]">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold tracking-wide uppercase shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-indigo-600 animate-ping"></span> Solusi Digital Profesional & Terpercaya
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+                        Wujudkan Website & Undangan Digital Impian Bersama <span class="bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-700 bg-clip-text text-transparent animate-gradient">AQUEST Tech</span>
+                    </h1>
+                    <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Kami menyediakan jasa pembuatan website company profile, toko online, serta undangan pernikahan web yang elegan, cepat, interaktif, dan responsif untuk semua perangkat.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#layanan" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg shadow-indigo-500/25 transition-all hover:scale-105 active:scale-95 text-center">
+                            Lihat Katalog & Pesan <i class="fa-solid fa-arrow-right ml-2 animate-bounce"></i>
+                        </a>
+                        <a href="https://wa.me/6281779993104?text=Halo%20AQUEST%20Tech,%20saya%20ingin%20konsultasi%20pembuatan%20website." target="_blank" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-semibold px-8 py-4 rounded-2xl border border-slate-200 shadow-sm transition-all hover:scale-105 active:scale-95 text-center">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 mr-2 text-lg"></i> Konsultasi Gratis
+                        </a>
+                    </div>
+                    <!-- Trust Metrics -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-100 max-w-lg mx-auto lg:mx-0">
+                        <div class="transform hover:-translate-y-1 transition-transform">
+                            <p class="text-2xl sm:text-3xl font-bold text-slate-900">500+</p>
+                            <p class="text-xs text-slate-500 font-medium">Proyek Selesai</p>
+                        </div>
+                        <div class="transform hover:-translate-y-1 transition-transform">
+                            <p class="text-2xl sm:text-3xl font-bold text-slate-900">100%</p>
+                            <p class="text-xs text-slate-500 font-medium">Responsif HP/PC</p>
+                        </div>
+                        <div class="transform hover:-translate-y-1 transition-transform">
+                            <p class="text-2xl sm:text-3xl font-bold text-slate-900">24/7</p>
+                            <p class="text-xs text-slate-500 font-medium">Dukungan Tim</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic / Illustration Card with Floating Animation -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md bg-white rounded-3xl p-6 shadow-2xl border border-slate-100/80 animate-[float_4s_ease-in-out_infinite]">
+                        <div class="absolute -top-3 -right-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-md animate-pulse">
+                            ⭐ Terlaris 2026
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-48 bg-gradient-to-br from-indigo-500 via-indigo-600 to-violet-700 rounded-2xl flex items-center justify-center text-white relative overflow-hidden shadow-inner">
+                                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                                <div class="text-center p-6 transform hover:scale-105 transition-transform duration-300">
+                                    <i class="fa-solid fa-laptop-code text-5xl mb-2 animate-bounce"></i>
+                                    <p class="font-bold text-lg">AQUEST Digital Studio</p>
+                                    <p class="text-xs text-indigo-100">Modern • Cepat • Elegan</p>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="font-semibold text-slate-700">Company Profile Website</span>
+                                    <span class="text-indigo-600 font-bold">Rp 1.500.000</span>
+                                </div>
+                                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-indigo-600 h-full w-4/5 rounded-full animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite]"></div>
+                                </div>
+                                <p class="text-xs text-slate-500 pt-1">Dilengkapi CMS, optimasi SEO, dan domain hosting siap pakai.</p>
+                            </div>
+                            <button onclick="addToCart('Company Profile Website', 1500000, 'fa-laptop-code')" class="w-full bg-slate-900 hover:bg-indigo-600 text-white font-semibold py-3 rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95">
+                                <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG PRODUK & LAYANAN (MENU PEMBELIAN) -->
+    <section id="layanan" class="py-20 bg-slate-100/60 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-indigo-600 font-bold text-sm tracking-widest uppercase bg-indigo-50 px-3 py-1 rounded-full shadow-xs">Menu Pembelian & Katalog</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Pilih Layanan Profesional Sesuai Kebutuhan Anda</h2>
+                <p class="text-slate-600 text-base">Semua paket sudah termasuk desain eksklusif, optimasi mobile (HP, laptop, PC), dan garansi revisi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1: Company Profile -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col justify-between group hover:-translate-y-1.5">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 group-hover:rotate-6">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Company Profile / Bisnis</h3>
+                        <p class="text-xs text-slate-500 mb-6">Website profesional untuk memperkuat kredibilitas perusahaan atau UMKM.</p>
+                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Desain Custom & Responsif</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Domain & Hosting 1 Tahun</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tombol WhatsApp & SEO</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline justify-between mb-4 pt-4 border-t border-slate-100">
+                            <span class="text-[10px] text-slate-400 font-semibold uppercase">Harga</span>
+                            <span class="text-xl font-extrabold text-indigo-600">Rp 1.500.000</span>
+                        </div>
+                        <button onclick="addToCart('Company Profile Website', 1500000, 'fa-globe')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition-all shadow-md shadow-indigo-500/20 flex items-center justify-center gap-2 text-sm hover:scale-[1.02] active:scale-95">
+                            <i class="fa-solid fa-cart-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2: E-Commerce -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col justify-between group hover:-translate-y-1.5">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:rotate-6">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Toko Online / E-Commerce</h3>
+                        <p class="text-xs text-slate-500 mb-6">Platform jualan online lengkap dengan keranjang, produk, & checkout otomatis.</p>
+                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Manajemen Produk & Stok</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Integrasi Ongkir & Payment</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Panel Admin Toko</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline justify-between mb-4 pt-4 border-t border-slate-100">
+                            <span class="text-[10px] text-slate-400 font-semibold uppercase">Harga</span>
+                            <span class="text-xl font-extrabold text-indigo-600">Rp 2.500.000</span>
+                        </div>
+                        <button onclick="addToCart('Toko Online / E-Commerce', 2500000, 'fa-store')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition-all shadow-md shadow-indigo-500/20 flex items-center justify-center gap-2 text-sm hover:scale-[1.02] active:scale-95">
+                            <i class="fa-solid fa-cart-plus"></i> Tambah
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Undangan Basic -->
+                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col justify-between group hover:-translate-y-1.5">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300 group-hover:rotate-6">
+                            <i class="fa-solid fa-ring"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Undangan Pernikahan Basic</h3>
+                        <p class="text-xs text-slate-500 mb-6">Undangan digital praktis dengan hitung mundur dan buku tamu.</p>
+                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tema Desain Elegan</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Hitung Mundur & RSVP</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Musik Latar Romantis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline justify-between mb-4 pt-4 border-t border-slate-100">
+                           

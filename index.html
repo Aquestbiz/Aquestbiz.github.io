@@ -1,255 +1,84 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AQUEST Tech - Jasa Pembuatan Website & Undangan Pernikahan Digital Profesional</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#eef2ff',
-                            100: '#e0e7ff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            900: '#312e81',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07110d">
+<meta name="description" content="AQUEST TECH — jasa pembuatan website bisnis dan undangan digital modern.">
+<title>AQUEST TECH — Digital Solutions</title>
+<style>
+:root{--bg:#060b08;--panel:#0d1711;--panel2:#111f16;--green:#39f28a;--green2:#16b866;--text:#f3fff7;--muted:#a2b7a9;--line:#20372a;--danger:#ff7777;--shadow:0 18px 55px #0008}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#123622 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}.nav{position:sticky;top:0;z-index:20;background:#07100de8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:900;letter-spacing:1.4px;font-size:1.25rem}.logo span{color:var(--green)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--green)}.navactions{display:flex;gap:10px;align-items:center}.btn{border:1px solid var(--green);background:var(--green);color:#041109;padding:11px 18px;border-radius:11px;font-weight:800;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px #39f28a33}.btn.outline{background:transparent;color:var(--green)}.btn.dark{background:#132219;color:var(--text);border-color:var(--line)}.cartbtn{position:relative}.count{display:inline-grid;place-items:center;background:#061109;color:var(--green);border-radius:50%;width:22px;height:22px;font-size:.75rem;margin-left:5px}
+.hero{padding:95px 0 75px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}.eyebrow{color:var(--green);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}.hero h1{font-size:clamp(2.8rem,6vw,5.5rem);line-height:1.02;letter-spacing:-3px;margin:18px 0}.hero h1 span{color:var(--green)}.hero p{color:var(--muted);max-width:590px;font-size:1.08rem}.heroBtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.heroArt{min-height:360px;border:1px solid #28543a;border-radius:28px;background:linear-gradient(145deg,#142c1c,#08110b 70%);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}.orb{width:230px;height:230px;border-radius:50%;border:1px solid #39f28a88;box-shadow:0 0 70px #39f28a33,inset 0 0 55px #39f28a22;display:grid;place-items:center;color:var(--green);font-size:5rem;font-weight:900}.heroArt:before,.heroArt:after{content:"";position:absolute;border:1px solid #39f28a22;border-radius:50%;width:330px;height:330px}.heroArt:after{width:430px;height:430px}.float{position:absolute;background:#0d1b12;border:1px solid var(--line);padding:12px 16px;border-radius:12px;color:var(--muted);font-size:.85rem}.f1{top:13%;left:7%}.f2{right:6%;bottom:15%}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}.stat{border-left:2px solid var(--green);padding-left:13px}.stat b{display:block;font-size:1.35rem}.stat small{color:var(--muted)}
+section{padding:76px 0}.sectionhead{text-align:center;max-width:700px;margin:0 auto 38px}.sectionhead h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0}.sectionhead p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.service{background:linear-gradient(145deg,#112219,#0a120d);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.25s}.service:hover{border-color:#39f28a88;transform:translateY(-4px)}.serviceIcon{width:52px;height:52px;border-radius:15px;background:#173a25;color:var(--green);display:grid;place-items:center;font-size:1.5rem}.service h3{font-size:1.45rem;margin:18px 0 6px}.service p,.service li{color:var(--muted)}.service ul{padding-left:20px;margin:14px 0 22px}.price{font-size:1.2rem;font-weight:900;color:var(--green);margin:14px 0}.tag{display:inline-block;color:var(--green);background:#143321;padding:5px 10px;border-radius:30px;font-size:.75rem;font-weight:800}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:16px}.step b{color:var(--green);font-size:1.4rem}.step h3{margin:8px 0}.step p{color:var(--muted);margin:0}.brands{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}.brand{border:1px solid var(--line);background:var(--panel);padding:15px 24px;border-radius:12px;color:#c8d8cd;font-weight:800;letter-spacing:1px}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}.stars{color:#b6ff52;letter-spacing:3px}.review p{color:var(--muted)}.review strong{display:block;margin-top:12px}
+footer{border-top:1px solid var(--line);background:#050906;padding:40px 0 22px}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footgrid p,.footgrid a{color:var(--muted)}.footgrid a{display:block;margin:7px 0}.copyright{border-top:1px solid var(--line);margin-top:28px;padding-top:18px;color:#789080;font-size:.85rem;text-align:center}
+.modal{position:fixed;inset:0;background:#000b;z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.modal.show{display:flex}.dialog{width:min(720px,100%);max-height:92vh;overflow:auto;background:#0b160f;border:1px solid #28543a;border-radius:20px;padding:24px;box-shadow:var(--shadow)}.dialoghead{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:16px}.dialog h2{margin:0}.close{border:0;background:#1a2a20;color:white;border-radius:9px;padding:7px 12px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.88rem;color:#c5d7ca}.field input,.field select,.field textarea{width:100%;background:#07100b;color:white;border:1px solid #294333;border-radius:10px;padding:11px;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--green)}.field textarea{min-height:90px;resize:vertical}.formnote{font-size:.83rem;color:var(--muted)}.formactions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;flex-wrap:wrap}
+.cartitem{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}.cartitem small{color:var(--muted);display:block}.remove{border:1px solid #633;color:#ff9a9a;background:transparent;border-radius:8px;padding:6px 10px}.total{display:flex;justify-content:space-between;font-weight:900;font-size:1.15rem;padding:18px 0}.paybox{background:#07100b;border:1px dashed #3b8054;border-radius:15px;padding:18px;text-align:center;margin-top:15px}.qrplaceholder{width:min(230px,100%);aspect-ratio:1;margin:12px auto;background:#f5fff7;color:#102018;border-radius:10px;display:grid;place-items:center;padding:18px;font-weight:800}.timer{font-size:1.7rem;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums}.muted{color:var(--muted)}
+.chatToggle{position:fixed;right:20px;bottom:20px;z-index:30;border:0;border-radius:50px;padding:14px 20px;background:var(--green);color:#06110a;font-weight:900;box-shadow:0 8px 30px #0008}.chatbox{position:fixed;right:20px;bottom:85px;width:min(350px,calc(100% - 40px));height:420px;background:#0b160f;border:1px solid #2a5439;border-radius:18px;z-index:30;display:none;overflow:hidden;box-shadow:var(--shadow)}.chatbox.show{display:flex;flex-direction:column}.chathead{background:#12301d;padding:14px;font-weight:800;display:flex;justify-content:space-between}.chatmessages{flex:1;padding:14px;overflow:auto;display:flex;flex-direction:column;gap:10px}.bubble{max-width:85%;padding:10px 12px;border-radius:12px;background:#1a2c20;color:#dcebe0;font-size:.9rem}.bubble.user{align-self:flex-end;background:#1d7545;color:white}.chatinput{display:flex;padding:10px;gap:7px;border-top:1px solid var(--line)}.chatinput input{min-width:0;flex:1;background:#07100b;border:1px solid var(--line);border-radius:9px;padding:9px;color:white}.chatinput button{border:0;background:var(--green);border-radius:9px;padding:0 13px;font-weight:900}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#163923;border:1px solid #39f28a;color:white;padding:12px 18px;border-radius:10px;z-index:80;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:65px}.heroArt{min-height:290px}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.reviews{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr 1fr}.footgrid>div:first-child{grid-column:1/-1}}
+@media(max-width:520px){.navin{height:66px}.logo{font-size:1.05rem}.navactions .btn{padding:9px 11px;font-size:.85rem}.hero h1{letter-spacing:-1.8px}.stats{gap:8px}.stat b{font-size:1.1rem}.stat small{font-size:.72rem}section{padding:58px 0}.service{padding:22px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.dialog{padding:18px}.footgrid{grid-template-columns:1fr}.footgrid>div:first-child{grid-column:auto}}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+<body>
+<header class="nav"><div class="container navin">
+<a class="logo" href="#">AQUEST <span>TECH.</span></a>
+<nav class="navlinks"><a href="#layanan">Layanan</a><a href="#proses">Cara Kerja</a><a href="#ulasan">Ulasan</a><a href="#partner">Partner</a></nav>
+<div class="navactions"><button class="btn outline cartbtn" onclick="openCart()">Keranjang <span class="count" id="cartCount">0</span></button><a class="btn" href="#layanan">Mulai Pesan</a></div>
+</div></header>
+<main>
+<div class="container hero">
+<div><div class="eyebrow">Creative digital studio</div><h1>Bangun Ide.<br><span>Hadirkan Digital.</span></h1><p>AQUEST TECH membantu bisnis dan momen spesial Anda tampil lebih profesional melalui website bisnis modern dan undangan digital yang berkesan.</p>
+<div class="heroBtns"><a class="btn" href="#layanan">Jelajahi Layanan ↗</a><button class="btn dark" onclick="openChat()">Konsultasi Gratis</button></div>
+<div class="stats"><div class="stat"><b>Modern</b><small>Desain kekinian</small></div><div class="stat"><b>Responsive</b><small>Semua perangkat</small></div><div class="stat"><b>Support</b><small>Siap membantu</small></div></div></div>
+<div class="heroArt"><div class="orb">AQ</div><div class="float f1">✦ Digital Experience</div><div class="float f2">● Black & Green Concept</div></div>
+</div>
+<section id="layanan"><div class="container"><div class="sectionhead"><div class="eyebrow">Solusi kami</div><h2>Layanan <span style="color:var(--green)">AQUEST TECH</span></h2><p>Pilih layanan yang Anda butuhkan. Isi brief pemesanan, masukkan ke keranjang, lalu lanjutkan ke pembayaran.</p></div>
+<div class="cards">
+<article class="service"><div class="serviceIcon">💍</div><span class="tag">DIGITAL INVITATION</span><h3>Website Undangan</h3><p>Undangan digital elegan dan praktis untuk membagikan hari istimewa kepada keluarga dan sahabat.</p><ul><li>Informasi acara dan lokasi</li><li>Galeri foto & cerita pasangan</li><li>RSVP dan ucapan tamu</li><li>Tampilan ramah ponsel</li></ul><div class="price">Mulai dari Rp —</div><button class="btn" onclick="openOrder('undangan')">Pesan Undangan</button></article>
+<article class="service"><div class="serviceIcon">⌘</div><span class="tag">BUSINESS WEBSITE</span><h3>Website Bisnis</h3><p>Website profesional untuk memperkenalkan brand, layanan, portofolio, dan membantu calon pelanggan menghubungi Anda.</p><ul><li>Profil perusahaan / bisnis</li><li>Halaman produk atau layanan</li><li>Kontak, WhatsApp & lokasi</li><li>Desain responsive</li></ul><div class="price">Mulai dari Rp —</div><button class="btn" onclick="openOrder('website')">Pesan Website</button></article>
+</div></div></section>
+<section id="proses"><div class="container"><div class="sectionhead"><div class="eyebrow">Simple process</div><h2>Pesan dengan <span style="color:var(--green)">Mudah</span></h2><p>Alur pemesanan dibuat sederhana agar kebutuhan Anda tersampaikan dengan jelas.</p></div><div class="steps"><div class="step"><b>01</b><h3>Pilih layanan</h3><p>Tentukan undangan digital atau website bisnis.</p></div><div class="step"><b>02</b><h3>Isi kebutuhan</h3><p>Lengkapi formulir brief sesuai jenis layanan yang dipilih.</p></div><div class="step"><b>03</b><h3>Konfirmasi pesanan</h3><p>Periksa keranjang dan lanjutkan ke instruksi pembayaran.</p></div></div></div></section>
+<section id="ulasan"><div class="container"><div class="sectionhead"><div class="eyebrow">Testimonials</div><h2>Apa Kata <span style="color:var(--green)">Pelanggan?</span></h2><p>Ulasan yang dikirim melalui formulir akan tampil di perangkat ini.</p></div><div class="reviews" id="reviewList"><div class="review"><div class="stars">★★★★★</div><p>Bagikan pengalaman Anda menggunakan layanan AQUEST TECH.</p><strong>Pelanggan AQUEST</strong></div></div><div style="text-align:center;margin-top:28px"><button class="btn outline" onclick="openReview()">✦ Tulis Ulasan</button></div></div></section>
+<section id="partner"><div class="container"><div class="sectionhead"><div class="eyebrow">Our network</div><h2>Brand & Partner</h2><p>Area ini dapat diisi dengan logo brand yang telah bekerja sama dengan AQUEST TECH.</p></div><div class="brands"><div class="brand">YOUR BRAND</div><div class="brand">PARTNER LOGO</div><div class="brand">BRAND NAME</div><div class="brand">COLLABORATOR</div></div></div></section>
+</main>
+<footer><div class="container"><div class="footgrid"><div><a class="logo" href="#">AQUEST <span>TECH.</span></a><p>Solusi digital untuk bisnis yang berkembang dan momen spesial yang tak terlupakan.</p></div><div><b>Menu</b><a href="#layanan">Layanan</a><a href="#proses">Cara Kerja</a><a href="#ulasan">Ulasan</a></div><div><b>Hubungi Kami</b><a href="https://wa.me/6281779993104" target="_blank" rel="noopener">WhatsApp Admin</a><a href="#partner">Partner</a><a href="mailto:hello@aquesttech.com">Email</a></div></div><div class="copyright">© <span id="year"></span> AQUEST TECH. All rights reserved.</div></div></footer>
 
-    <!-- TOP NOTIFICATION BAR -->
-    <div class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-inner">
-        <span>🎉 Promo Spesial! Gunakan kode voucher <strong class="underline decoration-amber-400 decoration-2">AQUEST10</strong> untuk diskon 10% di keranjang belanja!</span>
-    </div>
+<div class="modal" id="orderModal"><div class="dialog"><div class="dialoghead"><h2 id="orderTitle">Form Pemesanan</h2><button class="close" onclick="closeModal('orderModal')">✕</button></div><form id="orderForm"><div class="formgrid" id="orderFields"></div><p class="formnote">Harga belum ditampilkan karena perlu disesuaikan dengan paket resmi AQUEST TECH. Admin dapat mengonfirmasi biaya setelah brief diterima.</p><div class="formactions"><button type="button" class="btn dark" onclick="closeModal('orderModal')">Batal</button><button class="btn" type="submit">Tambahkan ke Keranjang</button></div></form></div></div>
 
-    <!-- NAVBAR -->
-    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-                    <i class="fa-solid fa-code text-xl"></i>
-                </div>
-                <div>
-                    <span class="text-xl font-extrabold bg-gradient-to-r from-indigo-600 to-violet-700 bg-clip-text text-transparent tracking-tight">AQUEST TECH</span>
-                    <span class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold">Web & Wedding Solution</span>
-                </div>
-            </a>
+<div class="modal" id="cartModal"><div class="dialog"><div class="dialoghead"><h2>Keranjang Belanja</h2><button class="close" onclick="closeModal('cartModal')">✕</button></div><div id="cartItems"></div><div class="total"><span>Total sementara</span><span id="cartTotal">Menunggu penawaran</span></div><p class="formnote">Total final akan dikonfirmasi admin berdasarkan kebutuhan dan paket yang dipilih.</p><div class="formactions"><button class="btn dark" onclick="closeModal('cartModal')">Lanjut Belanja</button><button class="btn" onclick="showPayment()">Lanjut Pembayaran</button></div><div id="paymentArea"></div></div></div>
 
-            <!-- Navigation Links (Desktop) -->
-            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
-                <a href="#beranda" class="hover:text-indigo-600 transition-colors">Beranda</a>
-                <a href="#layanan" class="hover:text-indigo-600 transition-colors">Layanan & Katalog</a>
-                <a href="#fitur" class="hover:text-indigo-600 transition-colors">Keunggulan</a>
-                <a href="#partner" class="hover:text-indigo-600 transition-colors">Partner Kami</a>
-                <a href="#kontak" class="hover:text-indigo-600 transition-colors">Kontak</a>
-            </nav>
+<div class="modal" id="reviewModal"><div class="dialog"><div class="dialoghead"><h2>Kirim Ulasan</h2><button class="close" onclick="closeModal('reviewModal')">✕</button></div><form id="reviewForm"><div class="formgrid"><div class="field"><label>Nama</label><input name="name" required maxlength="45" placeholder="Nama Anda"></div><div class="field"><label>Rating</label><select name="rating" required><option value="5">★★★★★ — Sangat puas</option><option value="4">★★★★ — Puas</option><option value="3">★★★ — Cukup</option><option value="2">★★ — Kurang</option><option value="1">★ — Tidak puas</option></select></div><div class="field full"><label>Ulasan</label><textarea name="message" required maxlength="400" placeholder="Ceritakan pengalaman Anda..."></textarea></div></div><div class="formactions"><button class="btn" type="submit">Kirim Ulasan</button></div></form></div></div>
 
-            <!-- Actions: Cart & Mobile Menu Button -->
-            <div class="flex items-center gap-3">
-                <!-- Cart Button with Badge -->
-                <button onclick="toggleCartModal()" class="relative p-2.5 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 transition-colors border border-slate-200/60" aria-label="Keranjang Belanja">
-                    <i class="fa-solid fa-cart-shopping text-lg"></i>
-                    <span id="cart-badge" class="absolute -top-1.5 -right-1.5 bg-rose-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md scale-0 transition-transform duration-300">0</span>
-                </button>
-
-                <!-- WhatsApp Quick Link Button -->
-                <a href="https://wa.me/6281779993104?text=Halo%20AQUEST%20Tech,%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website%20dan%20undangan%20pernikahan." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-sm transition-all hover:shadow-emerald-500/20">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>WhatsApp</span>
-                </a>
-
-                <!-- Mobile Menu Hamburger -->
-                <button onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">
-                    <i class="fa-solid fa-bars text-lg"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
-            <a href="#beranda" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Beranda</a>
-            <a href="#layanan" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Layanan & Katalog</a>
-            <a href="#fitur" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Keunggulan</a>
-            <a href="#partner" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Partner Kami</a>
-            <a href="#kontak" onclick="toggleMobileMenu()" class="block font-medium text-slate-700 hover:text-indigo-600 py-1">Kontak</a>
-            <div class="pt-2 border-t border-slate-100">
-                <a href="https://wa.me/6281779993104" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 text-white py-2.5 rounded-xl font-medium w-full">
-                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- HERO SECTION (JUDUL HALAMAN & BANNER) -->
-    <section id="beranda" class="relative overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-white py-16 sm:py-24 lg:py-32">
-        <!-- Background Glow Ornaments -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-indigo-200/30 blur-3xl pointer-events-none rounded-full -z-10 animate-pulse"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left animate-[fadeIn_0.8s_ease-out]">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold tracking-wide uppercase shadow-sm">
-                        <span class="w-2 h-2 rounded-full bg-indigo-600 animate-ping"></span> Solusi Digital Profesional & Terpercaya
-                    </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-                        Wujudkan Website & Undangan Digital Impian Bersama <span class="bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-700 bg-clip-text text-transparent animate-gradient">AQUEST Tech</span>
-                    </h1>
-                    <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Kami menyediakan jasa pembuatan website company profile, toko online, serta undangan pernikahan web yang elegan, cepat, interaktif, dan responsif untuk semua perangkat.
-                    </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#layanan" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg shadow-indigo-500/25 transition-all hover:scale-105 active:scale-95 text-center">
-                            Lihat Katalog & Pesan <i class="fa-solid fa-arrow-right ml-2 animate-bounce"></i>
-                        </a>
-                        <a href="https://wa.me/6281779993104?text=Halo%20AQUEST%20Tech,%20saya%20ingin%20konsultasi%20pembuatan%20website." target="_blank" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-semibold px-8 py-4 rounded-2xl border border-slate-200 shadow-sm transition-all hover:scale-105 active:scale-95 text-center">
-                            <i class="fa-brands fa-whatsapp text-emerald-600 mr-2 text-lg"></i> Konsultasi Gratis
-                        </a>
-                    </div>
-                    <!-- Trust Metrics -->
-                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-100 max-w-lg mx-auto lg:mx-0">
-                        <div class="transform hover:-translate-y-1 transition-transform">
-                            <p class="text-2xl sm:text-3xl font-bold text-slate-900">500+</p>
-                            <p class="text-xs text-slate-500 font-medium">Proyek Selesai</p>
-                        </div>
-                        <div class="transform hover:-translate-y-1 transition-transform">
-                            <p class="text-2xl sm:text-3xl font-bold text-slate-900">100%</p>
-                            <p class="text-xs text-slate-500 font-medium">Responsif HP/PC</p>
-                        </div>
-                        <div class="transform hover:-translate-y-1 transition-transform">
-                            <p class="text-2xl sm:text-3xl font-bold text-slate-900">24/7</p>
-                            <p class="text-xs text-slate-500 font-medium">Dukungan Tim</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hero Graphic / Illustration Card with Floating Animation -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md bg-white rounded-3xl p-6 shadow-2xl border border-slate-100/80 animate-[float_4s_ease-in-out_infinite]">
-                        <div class="absolute -top-3 -right-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-md animate-pulse">
-                            ⭐ Terlaris 2026
-                        </div>
-                        <div class="space-y-4">
-                            <div class="h-48 bg-gradient-to-br from-indigo-500 via-indigo-600 to-violet-700 rounded-2xl flex items-center justify-center text-white relative overflow-hidden shadow-inner">
-                                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                                <div class="text-center p-6 transform hover:scale-105 transition-transform duration-300">
-                                    <i class="fa-solid fa-laptop-code text-5xl mb-2 animate-bounce"></i>
-                                    <p class="font-bold text-lg">AQUEST Digital Studio</p>
-                                    <p class="text-xs text-indigo-100">Modern • Cepat • Elegan</p>
-                                </div>
-                            </div>
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between text-sm">
-                                    <span class="font-semibold text-slate-700">Company Profile Website</span>
-                                    <span class="text-indigo-600 font-bold">Rp 1.500.000</span>
-                                </div>
-                                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                                    <div class="bg-indigo-600 h-full w-4/5 rounded-full animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite]"></div>
-                                </div>
-                                <p class="text-xs text-slate-500 pt-1">Dilengkapi CMS, optimasi SEO, dan domain hosting siap pakai.</p>
-                            </div>
-                            <button onclick="addToCart('Company Profile Website', 1500000, 'fa-laptop-code')" class="w-full bg-slate-900 hover:bg-indigo-600 text-white font-semibold py-3 rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95">
-                                <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- KATALOG PRODUK & LAYANAN (MENU PEMBELIAN) -->
-    <section id="layanan" class="py-20 bg-slate-100/60 border-t border-slate-200/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-indigo-600 font-bold text-sm tracking-widest uppercase bg-indigo-50 px-3 py-1 rounded-full shadow-xs">Menu Pembelian & Katalog</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Pilih Layanan Profesional Sesuai Kebutuhan Anda</h2>
-                <p class="text-slate-600 text-base">Semua paket sudah termasuk desain eksklusif, optimasi mobile (HP, laptop, PC), dan garansi revisi.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Product 1: Company Profile -->
-                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col justify-between group hover:-translate-y-1.5">
-                    <div>
-                        <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 group-hover:rotate-6">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Company Profile / Bisnis</h3>
-                        <p class="text-xs text-slate-500 mb-6">Website profesional untuk memperkuat kredibilitas perusahaan atau UMKM.</p>
-                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Desain Custom & Responsif</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Domain & Hosting 1 Tahun</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tombol WhatsApp & SEO</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="flex items-baseline justify-between mb-4 pt-4 border-t border-slate-100">
-                            <span class="text-[10px] text-slate-400 font-semibold uppercase">Harga</span>
-                            <span class="text-xl font-extrabold text-indigo-600">Rp 1.500.000</span>
-                        </div>
-                        <button onclick="addToCart('Company Profile Website', 1500000, 'fa-globe')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition-all shadow-md shadow-indigo-500/20 flex items-center justify-center gap-2 text-sm hover:scale-[1.02] active:scale-95">
-                            <i class="fa-solid fa-cart-plus"></i> Tambah
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product 2: E-Commerce -->
-                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col justify-between group hover:-translate-y-1.5">
-                    <div>
-                        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:rotate-6">
-                            <i class="fa-solid fa-store"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Toko Online / E-Commerce</h3>
-                        <p class="text-xs text-slate-500 mb-6">Platform jualan online lengkap dengan keranjang, produk, & checkout otomatis.</p>
-                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Manajemen Produk & Stok</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Integrasi Ongkir & Payment</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Panel Admin Toko</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="flex items-baseline justify-between mb-4 pt-4 border-t border-slate-100">
-                            <span class="text-[10px] text-slate-400 font-semibold uppercase">Harga</span>
-                            <span class="text-xl font-extrabold text-indigo-600">Rp 2.500.000</span>
-                        </div>
-                        <button onclick="addToCart('Toko Online / E-Commerce', 2500000, 'fa-store')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition-all shadow-md shadow-indigo-500/20 flex items-center justify-center gap-2 text-sm hover:scale-[1.02] active:scale-95">
-                            <i class="fa-solid fa-cart-plus"></i> Tambah
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product 3: Undangan Basic -->
-                <div class="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 flex flex-col justify-between group hover:-translate-y-1.5">
-                    <div>
-                        <div class="w-14 h-14 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300 group-hover:rotate-6">
-                            <i class="fa-solid fa-ring"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Undangan Pernikahan Basic</h3>
-                        <p class="text-xs text-slate-500 mb-6">Undangan digital praktis dengan hitung mundur dan buku tamu.</p>
-                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tema Desain Elegan</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Hitung Mundur & RSVP</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Musik Latar Romantis</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="flex items-baseline justify-between mb-4 pt-4 border-t border-slate-100">
-                           
+<div class="chatbox" id="chatbox"><div class="chathead">AQUEST TECH — Live Chat <button class="close" onclick="openChat()">✕</button></div><div class="chatmessages" id="chatMessages"><div class="bubble">Halo! Selamat datang di AQUEST TECH. Ada yang bisa kami bantu? Silakan tulis pesan Anda.</div></div><form class="chatinput" id="chatForm"><input id="chatText" placeholder="Tulis pesan..." required><button>Kirim</button></form><div style="padding:0 12px 10px;font-size:.72rem;color:#91a997">Demo chat pada halaman ini. Untuk dibalas admin secara langsung, hubungkan ke WhatsApp atau layanan live-chat.</div></div>
+<button class="chatToggle" onclick="openChat()">☏ Chat Admin</button><div class="toast" id="toast"></div>
+<script>
+const cart=[];
+let orderType='';
+const $=id=>document.getElementById(id);
+function showToast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+function openModal(id){$(id).classList.add('show')}function closeModal(id){$(id).classList.remove('show')}
+function field(label,name,placeholder='',type='text',required=true,full=false){return `<div class="field ${full?'full':''}"><label>${label}</label><input name="${name}" type="${type}" placeholder="${placeholder}" ${required?'required':''}></div>`}
+function area(label,name,placeholder,required=true){return `<div class="field full"><label>${label}</label><textarea name="${name}" placeholder="${placeholder}" ${required?'required':''}></textarea></div>`}
+function selectField(label,name,opts){return `<div class="field"><label>${label}</label><select name="${name}" required>${opts.map(x=>`<option>${x}</option>`).join('')}</select></div>`}
+function openOrder(type){orderType=type;const f=$('orderFields');$('orderTitle').textContent=type==='undangan'?'Brief Website Undangan':'Brief Website Bisnis';
+if(type==='undangan'){f.innerHTML=field('Nama mempelai pria','pria','Nama lengkap')+field('Nama mempelai wanita','wanita','Nama lengkap')+field('Tanggal acara','tanggal','', 'date')+field('Waktu acara','waktu','', 'text')+field('Lokasi / alamat acara','lokasi','Alamat lengkap','text',true,true)+field('Link Google Maps','maps','https://maps.google.com','url',false,true)+field('Nomor WhatsApp','wa','08xxxxxxxxxx','tel')+selectField('Konsep desain','tema',['Minimalis elegan','Modern black green','Floral','Luxury','Diskusikan dengan admin'])+area('Detail tambahan','detail','Contoh: akad, resepsi, love story, galeri foto, RSVP...');}
+else{f.innerHTML=field('Nama bisnis / brand','brand','Nama bisnis')+field('Nama pemesan','pemesan','Nama Anda')+selectField('Jenis website','jenis',['Company profile','Website UMKM / toko','Landing page promosi','Portfolio pribadi','Website katalog produk','Lainnya'])+field('Bidang usaha','bidang','Contoh: kuliner, fashion, jasa')+field('Nomor WhatsApp','wa','08xxxxxxxxxx','tel')+field('Email bisnis','email','email@bisnis.com','email',false)+field('Domain pilihan (jika ada)','domain','contoh: namabisnis.com','text',false)+selectField('Jumlah halaman','halaman',['1 halaman','2–5 halaman','6–10 halaman','Diskusikan dengan admin'])+area('Fitur yang dibutuhkan','fitur','Contoh: katalog, formulir, booking, pembayaran, blog...')+area('Referensi desain / catatan','detail','Tempel link referensi atau jelaskan kebutuhan...',false);}
+openModal('orderModal')}
+$('orderForm').addEventListener('submit',e=>{e.preventDefault();const data=Object.fromEntries(new FormData(e.target).entries());cart.push({type:orderType,title:orderType==='undangan'?'Website Undangan':'Website Bisnis',data});updateCart();closeModal('orderModal');e.target.reset();showToast('Pesanan ditambahkan ke keranjang')});
+function updateCart(){$('cartCount').textContent=cart.length;$('cartItems').innerHTML=cart.length?cart.map((x,i)=>`<div class="cartitem"><div><b>${x.title}</b><small>${Object.entries(x.data).slice(0,3).map(([k,v])=>`${k}: ${v}`).join(' • ')}</small></div><button class="remove" onclick="removeItem(${i})">Hapus</button></div>`).join(''):'<p class="muted">Keranjang Anda masih kosong. Silakan pilih layanan terlebih dahulu.</p>';$('cartTotal').textContent=cart.length?'Dikonfirmasi admin':'Rp 0'}
+function removeItem(i){cart.splice(i,1);updateCart()}
+function openCart(){updateCart();$('paymentArea').innerHTML='';openModal('cartModal')}
+function showPayment(){if(!cart.length){showToast('Keranjang masih kosong');return}$('paymentArea').innerHTML=`<div class="paybox"><b>Instruksi Pembayaran QRIS</b><p class="muted">Letakkan gambar QRIS resmi AQUEST TECH pada area ini sebelum website dipublikasikan.</p><div class="qrplaceholder">GAMBAR QRIS<br><small>Ganti dengan QRIS resmi</small></div><div class="timer" id="timer">06:00:00</div><small class="muted">Batas waktu pembayaran demo: 6 jam sejak tombol ditekan.</small><p class="formnote">Status pembayaran belum diverifikasi otomatis. Kirim bukti pembayaran kepada admin untuk konfirmasi.</p><a class="btn" style="display:inline-block;margin-top:8px" href="https://wa.me/6281779993104?text=Halo%20AQUEST%20TECH%2C%20saya%20ingin%20konfirmasi%20pembayaran." target="_blank" rel="noopener">Konfirmasi via WhatsApp</a></div>`;startTimer(21600)}
+let timerInterval;function startTimer(seconds){clearInterval(timerInterval);let left=seconds;const tick=()=>{const el=$('timer');if(!el){clearInterval(timerInterval);return}const h=String(Math.floor(left/3600)).padStart(2,'0'),m=String(Math.floor(left%3600/60)).padStart(2,'0'),s=String(left%60).padStart(2,'0');el.textContent=left>0?`${h}:${m}:${s}`:'WAKTU HABIS';if(left<=0)clearInterval(timerInterval);left--};tick();timerInterval=setInterval(tick,1000)}
+function openReview(){openModal('reviewModal')}
+$('reviewForm').addEventListener('submit',e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target).entries());const saved=JSON.parse(localStorage.getItem('aq_reviews')||'[]');saved.unshift(d);localStorage.setItem('aq_reviews',JSON.stringify(saved.slice(0,12)));renderReviews();closeModal('reviewModal');e.target.reset();showToast('Terima kasih atas ulasan Anda!')});
+function renderReviews(){const saved=JSON.parse(localStorage.getItem('aq_reviews')||'[]');if(!saved.length)return;$('reviewList').innerHTML=saved.map(r=>`<div class="review"><div class="stars">${'★'.repeat(Number(r.rating))}${'☆'.repeat(5-Number(r.rating))}</div><p>${escapeHtml(r.message)}</p><strong>${escapeHtml(r.name)}</strong></div>`).join('')}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function openChat(){$('chatbox').classList.toggle('show')}
+$('chatForm').addEventListener('submit',e=>{e.preventDefault();const v=$('chatText').value.trim();if(!v)return;const b=document.createElement('div');b.className='bubble user';b.textContent=v;$('chatMessages').appendChild(b);$('chatText').value='';const reply=document.createElement('div');reply.className='bubble';reply.textContent='Terima kasih! Pesan Anda tercatat pada demo chat. Untuk respons langsung dari admin, silakan lanjutkan melalui WhatsApp.';$('chatMessages').appendChild(reply);$('chatMessages').scrollTop=$('chatMessages').scrollHeight});
+$('year').textContent=new Date().getFullYear();renderReviews();updateCart();
+document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModal(m.id)}));
+</script>
+</body></html>
